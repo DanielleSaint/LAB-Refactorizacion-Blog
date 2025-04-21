@@ -1,0 +1,27 @@
+.navbar-fija {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6BAF5F; /* Color verde */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 100 0 10px #E63946;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+  .navbar-fija ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .navbar-fija ul li a {
+    color: #FFC73D;
+    text-decoration: none;
+  }
+  .navbar-fija ul li a:hover {
+    color: white;
+  }
+  
