@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #DCDDE1;
+#bg-body{
+    background-color: #F57C00;
     font-family: "Playwrite DE Grund", cursive;
 }
 #contacto-titulo{
@@ -15,28 +15,18 @@ body{
     display: flex;
     flex-wrap: row;
     justify-content: center;
-    height: 100hv;
+    padding: 3%;
+    width: 100%;
 }
 section{
     display: flex;
     flex-direction: column;
-    width: 70%;
-}
-form{
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 500px;
-    background-color: #B08854;
-    margin: 20px;
-    border-radius: 25px;
+    width: 60%;
 }
 #contenedor-correos{
-    background-color: #B08854;
+    background-color: rgb(255, 254, 236);
     margin: 20px;
-    width: 90%;
+    border: 5px solid #6BAF5F;
     border-radius: 25px;
     padding-top: 5px;
     padding-bottom: 30px;
@@ -46,12 +36,25 @@ h3{
     padding: 10px;
     text-align: center;
     font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: rgb(255, 254, 236);
+    margin: 20px;
+    width: 40%;
+    border: 2px solid #E63946;
+    border-radius: 25px;
 }
 #contacto-correo{
     background-color: rgb(255, 254, 236);
     margin: 10px 30px;
     padding: 5px 25px;
+    border: 2px solid #6BAF5F;
     border-radius: 15px;
+}
+#contacto-correo :hover{
+    background-color: rgb(255, 252, 195);
+    border: 2px solid #E63946;
 }
 #red{
     color: #E63946;
@@ -68,15 +71,6 @@ h3{
 #cafe{
     color: #B08854;
 }
-h3{
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    background-color: #B08854;
-    margin: 20px;
-    width: 40%;
-    border-radius: 25px;
-}
 #contenedor-contacto-directo{
     display: flex;
     flex-direction: row;
@@ -87,17 +81,36 @@ h3{
     margin: 5px;
     padding: 20px;
     width: 30px;
-    color: red;
+    color: #FFC73D;
 }
+
+
 #contenedor-form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+    width: 40%;
+    height: auto;
     background-color: #B08854;
-    margin: 10px;
+    margin: 20px;
     border-radius: 25px;
 }
-input{
+#validationCustom01{
+    background-color: rgb(255, 254, 236);
+    margin: 10px 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+#validationCustom02{
+    background-color: rgb(255, 254, 236);
+    margin: 10px 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+#floatingInputValue{
+    background-color: rgb(255, 254, 236);
+    margin: 10px 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+#floatingTextarea2{
     background-color: rgb(255, 254, 236);
     margin: 10px 30px;
     padding: 15px;
