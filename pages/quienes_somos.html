@@ -4,95 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos - Chilitips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/quienes_somos.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
     <header>
-        <div class="navbar-fija">
-            <nav class="navbar">
-              <ul>
-                <li><a href="/pages/contactenos.html">Contáctanos</a></li>
-                <li><a href="/pages/quienes_somos.html">Quiénes Somos</a></li>
-                <li><a href="#footer-contenedor">Nuestras Redes</a></li>
-                <li><a href="/index.html">Home</a></li>
-              </ul>
-            </nav>
-        </div>
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('/pages/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+        </script>
     </header>
     
-    <main>
-        <section class="nosotros">
-            <h1 style="text-align: center;">Quiénes Somos</h1>
-            <p style="text-align: justify;">Somos un grupo de 5 apasionados por la programación y la comida. Durante nuestro bootcamp de programación, decidimos combinar nuestras dos pasiones para crear este blog dedicado a compartir recetas, consejos y experiencias culinarias.</p>
-            <div class="team" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-                <article class="team-member" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2>Daniela</h2>
-                    <div style="width: 300px; margin: 0 auto;">
-                        <img src="/Assets/foto Dani.png" alt="Foto de Daniela" style="width: 100%; height: auto;">
+    <main class="container mt-5 pt-5">
+        <section class="nosotros text-center">
+            <h1>Quiénes Somos</h1>
+            <p class="text-justify">Somos un grupo de 5 apasionados por la programación y la comida. Durante nuestro bootcamp de programación, decidimos combinar nuestras dos pasiones para crear este blog dedicado a compartir recetas, consejos y experiencias culinarias.</p>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="/Assets/foto Dani.png" class="card-img-top" alt="Foto de Daniela" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniela</h5>
+                            <p class="card-text">Mi plato favorito son las Quesadillas.</p>
+                        </div>
                     </div>
-                    <p style="text-align: justify; margin-top: auto;">Mi plato favorto son las Quesadillas.</p>
-                </article>
-                <article class="team-member" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2>Ángela</h2>
-                    <div style="width: 300px; margin: 0 auto;">
-                        <img src="/Assets/fotoAngela.jpeg" alt="Foto de Daniela" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="/Assets/fotoAngela.jpeg" class="card-img-top" alt="Foto de Ángela" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">Ángela</h5>
+                            <p class="card-text">Mi plato favorito son los Tacos al Pastor.</p>
+                        </div>
                     </div>
-                    <p style="text-align: justify; margin-top: auto;">Mi plato favorito son los Tacos al Pastor.</p>
-                </article>
-                <article class="team-member" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2>Fabian</h2>
-                    <div style="width: 300px; margin: 0 auto;">
-                        <img src="/Assets/fotoFabian.jpg" alt="Foto de Fabian" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="/Assets/fotoFabian.jpg" class="card-img-top" alt="Foto de Fabian" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fabian</h5>
+                            <p class="card-text">Mi plato favorito son los Burros Mexicanos.</p>
+                        </div>
                     </div>
-                    <p style="text-align: justify; margin-top: auto;">Mi plato favorito son los Burros Mexicanos.</p>
-                </article>
-                <article class="team-member" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2>Fernando</h2>
-                    <div style="width: 300px; margin: 0 auto;">
-                        <img src="/Assets/fotoFer.jpg" alt="Foto de Fernando" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="/Assets/fotoFer.jpg" class="card-img-top" alt="Foto de Fernando" style="width: 100%; height:max-content;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando</h5>
+                            <p class="card-text">Mi plato favorito es la chimichanga.</p>
+                        </div>
                     </div>
-                    <p style="text-align: justify; margin-top: auto;">Mi plato favorito es la chimichanga.</p>
-                </article>
-                <article class="team-member" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2>Francisco</h2>
-                    <div style="width: 300px; margin: 0 auto;">
-                        <img src="https://st3.depositphotos.com/2546551/18320/v/450/depositphotos_183201822-stock-illustration-male-profile-picture.jpg" alt="Foto de Francisco" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="/Assets/fotoFrancisco.jpg" class="card-img-top" alt="Foto de Francisco" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">Francisco</h5>
+                            <p class="card-text">Mi plato favorito son las enchiladas.</p>
+                        </div>
                     </div>
-                    <p style="text-align: justify; margin-top: auto;">Mi plato favorito son las enchiladas.</p>
-                </article>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div id="footer-contenedor">
-            <div class="footer-titulo">
-              <h3 id="footer-titulo1">Chili Tips</h3>
-            </div>
-            <div class="footer-autores">
-              <h4 class="footer-titulo2">Nosotros</h4>
-              <ul id="footer-lista">
-                <li>Angela Laverde</li>
-                <li>Daniela Santacruz</li>
-                <li>Fabián Fonseca</li>
-                <li>Fernando Muñoz</li>
-                <li>Hermel Rojas</li>
-              </ul>
-            </div>
-            <div class="footer-contacto">
-              <h4 class="footer-titulo2">Contacto</h4>
-              <p><a href="chilitips@hola.com">chilitips@hola.com</a></p>
-            </div>
-        </div>
-        <div class="footer-copy">
-          <p> Chili tips <br> 
-            Copyright © 2025 Generation - Grupo Colaborativo #5. <br> 
-            Todos los derechos reservados.</p>
-        </div>
+        <div id="footer-placeholder"></div>
     </footer>
+    <script>
+        fetch('/pages/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+    </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/scripts/scripts.js"></script>
 </body>
 </html>
