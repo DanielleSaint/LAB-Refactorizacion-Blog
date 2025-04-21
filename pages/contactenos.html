@@ -7,19 +7,11 @@
     <link rel="stylesheet" href="../styles/contactenos.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
-<body>
+<body id="bg-body">
     <header>
-        <div class="navbar-fija">
-            <nav class="navbar">
-              <ul>
-                <li><a href="./pages/contactenos.html">Contáctanos</a></li>
-                <li><a href="./quienes_somos.html">Quiénes Somos</a></li>
-                <li><a href="#footer-contenedor">Nuestras Redes</a></li>
-                <li><a href="../index.html">Home</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div class="navbar-fija"></div>
     </header>
     
     <main>
@@ -53,7 +45,7 @@
                     <h3>Contacto directo:</h3>
                     <div id="contenedor-contacto-directo">
                         <div id="contenedor-iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#FFC73D" class="icono" viewBox="0 0 16 16">
                             <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                         </svg>
                         </div>
@@ -72,46 +64,62 @@
                 </div>
             </section>
     
-            <form>
+            <form id="contenedor-form" class="row needs-validation" novalidate>
                 <h3>Formulario:</h3>
-                <div id="contenedor-form">
-                    <input id="input-nombre" type="text" placeholder="Nombre" required>
-                    <input id="input-email" type="email" placeholder="e-mail" required>
-                    <input id="input-celular" type="number" placeholder="numero de telefono" required>
-                    <input id="input-descripcion" type="text" placeholder="descripcion" required>
-                    <button id="boton-form" type="submit">Enviar</button>
-                    <p id="respuesta"></p>
+                <div class="col-lg-12 col-md-6 col-sm-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
                 </div>
+
+                <div class="col-lg-12 col-md-6 col-sm-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-6 col-sm-4">
+                    <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="" required>
+                    <label for="floatingInputValue"></label>
+                    <div class="invalid-feedback">
+                        Por favor escribir email.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-6 col-sm-4">
+                    <label for="validationCustomUsername" class="form-label">Mensaje</label>
+                    <textarea class="form-control" placeholder="Deja tu mensaje aqui" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+
+                <div class="col-lg-6 col-md-4 col-sm-2">
+                    <button id="boton-form" class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+                <p id="respuesta"></p>
             </form>
+            
+            <!-- <div id="contenedor-form">
+                <input id="input-nombre" type="text" placeholder="Nombre" required>
+                <input id="input-email" type="email" placeholder="e-mail" required>
+                <input id="input-celular" type="number" placeholder="numero de telefono" required>
+                <input id="input-descripcion" type="text" placeholder="descripcion" required>
+                <button id="boton-form" type="submit">Enviar</button>
+            </div>  -->
+            
         </div>
     </main>
 
     <footer>
-        <div id="footer-contenedor">
-            <div class="footer-titulo">
-              <h3 id="footer-titulo1">Chili Tips</h3>
-            </div>
-            <div class="footer-autores">
-              <h4 class="footer-titulo2">Nosotros</h4>
-              <ul id="footer-lista">
-                <li>Angela Laverde</li>
-                <li>Daniela Santacruz</li>
-                <li>Fabián Fonseca</li>
-                <li>Fernando Muñoz</li>
-                <li>Hermel Rojas</li>
-              </ul>
-            </div>
-            <div class="footer-contacto">
-              <h4 class="footer-titulo2">Contacto</h4>
-              <p><a href="chilitips@hola.com">chilitips@hola.com</a></p>
-            </div>
-        </div>
-        <div class="footer-copy">
-          <p> Chili tips <br> 
-            Copyright © 2025 Generation - Grupo Colaborativo #5. <br> 
-            Todos los derechos reservados.</p>
-        </div>
+        <div id="footer-contenedor"></div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="../scripts/scripts.js"></script>
 </body>
 </html>
