@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Knewave&family=Merienda:wght@300..900&family=Playwrite+DE+Grund:wght@100..400&family=Slackey&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #DCDDE1;
+    font-family: "Playwrite DE Grund", cursive;
+}
+#contacto-titulo{
+    margin-top: 20px;
+    justify-self: center;
+}
+#contenedor-principal{
+    display: flex;
+    flex-wrap: row;
+    justify-content: center;
+    height: 100hv;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+form{
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 500px;
+    background-color: #B08854;
+    margin: 20px;
+    border-radius: 25px;
+}
+#contenedor-correos{
+    background-color: #B08854;
+    margin: 20px;
+    width: 90%;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+h3{
+    color: rgb(255, 254, 236);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+#contacto-correo{
+    background-color: rgb(255, 254, 236);
+    margin: 10px 30px;
+    padding: 5px 25px;
+    border-radius: 15px;
+}
+#red{
+    color: #E63946;
+}
+#naranja{
+    color: #F57C00;
+}
+#amarillo{
+    color: #FFC73D;
+}
+#verde{
+    color: #6BAF5F;
+}
+#cafe{
+    color: #B08854;
+}
+h3{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #B08854;
+    margin: 20px;
+    width: 40%;
+    border-radius: 25px;
+}
+#contenedor-contacto-directo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.icono{
+    margin: 5px;
+    padding: 20px;
+    width: 30px;
+    color: red;
+}
+#contenedor-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #B08854;
+    margin: 10px;
+    border-radius: 25px;
+}
+input{
+    background-color: rgb(255, 254, 236);
+    margin: 10px 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+#boton-form{
+    background-color: #E63946;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 15px;
+    color: rgb(255, 254, 236);
+    font-style: italic;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+/* Estilo para un tema mexicano */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px; 
+}
+section {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ff0000; /* Rojo */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+h1, h2, h3 {
+    color: #008000; /* Verde */
+}
+button {
+    background-color: #008000; /* Verde */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: #B08854; /* Marrón claro */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #008000; /* Verde */
+    border-radius: 10px;
+}
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #FFC73D; /* Rojo */
+    padding-left: 10px;
+    margin: 20px 0;
+}

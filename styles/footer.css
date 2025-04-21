@@ -1,0 +1,48 @@
+
+footer{
+background-color: #dc8835;
+padding: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#footer-contenedor{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+#footer-titulo1{
+color: #5f8358;
+font-size: 60px;
+}
+.footer-titulo2 {
+color: #FFC73D;
+font-size: 30px;
+}
+.footer-titulo,
+.footer-autores,
+.footer-contacto {
+flex: 1;
+margin: 5px;
+font-size: 20px;
+}
+.footer-autores ul {
+list-style: none;
+padding: 0;
+color: #313131;
+}
+.footer-copy {
+text-align: center;
+font-size: 15px;
+color: #403f3f;
+}
+a{
+text-decoration: none;
+color: #5f8358;
+}
+
+
+/* Verde vibrante (#6BAF5F): 
+Rojo intenso (#E63946): 
+Naranja quemado (#F57C00): 
+Marrón claro (#B08854)
+Amarillo mostaza (#FFC73D) */
