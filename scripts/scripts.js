@@ -1,11 +1,11 @@
 
-fetch("pages/navbar.html")
+fetch("/pages/navbar.html")
     .then(res => res.text())
     .then(data => {
-        document.getElementById("navbar-fija").innerHTML = data;
+        document.getElementById("navbar").innerHTML = data;
 });
 
-fetch("pages/footer.html")
+fetch("/pages/footer.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("footer").innerHTML = data;
